@@ -1,0 +1,114 @@
+body,html,p { 
+    margin: 0; padding: 0;
+    font-weight: unset;
+    text-decoration: unset;
+    color: black;}
+
+*, *:before, *:after {box-sizing: border-box;}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 16px;
+}
+
+.content>header>.burgar{
+    display: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1 0 auto;
+}
+
+
+.header-container{display: flex; flex-direction:row; 
+    padding: 30px;
+    align-items: center;
+}
+.header-container>h2{font-weight: bold;font-size: 32px;margin-left: 15px;}
+.header-container>nav{
+    display:flex;
+    flex-grow: 2;
+    align-self:flex-start;
+    justify-content: flex-end;
+}
+.header-container>nav>a{
+    display: flex;
+    width: 75px;
+}
+.header-container>img{
+    display: flex;
+    width:75px;
+    height: 75px;
+}
+
+main{display: flex; 
+    flex-direction: row; 
+    padding: 15px; 
+    justify-content: space-between;
+    } 
+main>article{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    margin: 15px;   
+}
+main>article>header{
+    display: flex;
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    background-color: lightgray;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+}
+main>article>a{
+    text-align: justify;
+    padding: 15px;
+}
+
+footer{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: lightgrey;
+    border-top-style:solid;
+    border-top-width: 2px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+footer>a+a{
+    font-weight: bold;
+}
+
+@media all and (max-width: 900px){
+    main{
+        flex-wrap: wrap;
+    }
+    .content>header>.normal-header{
+        display: none;
+    }
+    .content>header>.burgar{
+        display:block;
+    }
+    .content>header{
+        justify-content:space-between;
+    }
+}

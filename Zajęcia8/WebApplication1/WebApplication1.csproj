@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\Images\arc1.png" />
+      <None Include="wwwroot\Images\arc2.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Suits\Mark3.cshtml" />
+      <_ContentIncludedByDefault Remove="Suits\Mark6.cshtml" />
+      <_ContentIncludedByDefault Remove="Suits\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Suits\_PageStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Suits\Mark3.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Suits\Mark6.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Suits\_Layout.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Suits\Mark3.cshtml" />
+      <UpToDateCheckInput Remove="Suits\Mark6.cshtml" />
+      <UpToDateCheckInput Remove="Suits\_Layout.cshtml" />
+    </ItemGroup>
+
+</Project>
